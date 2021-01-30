@@ -22,6 +22,7 @@
         <zookeeper.version>3.4.5-cdh5.16.2</zookeeper.version>
         <curator.version>4.2.0</curator.version>
         <scala.version>2.12.10</scala.version>
+        <kafka.version>2.2.1</kafka.version>
     </properties>
 
     <repositories>
@@ -45,6 +46,11 @@
                 <artifactId>junit</artifactId>
                 <version>${junit.version}</version>
                 <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.kafka</groupId>
+                <artifactId>kafka-clients</artifactId>
+                <version>${kafka.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
